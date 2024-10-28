@@ -91,7 +91,7 @@ const PatientDetail = () => {
     useEffect(() => {
         const fetchPatient = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/patients/${id}`);
+                const response = await axios.get(`https://clinical-data-management-backend.onrender.com/api/patients/${id}`);
                 const data = response.data;
                 setPatient(data);
                 setName(data.name);
