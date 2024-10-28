@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js # Change this if your entry file is different
+    envVars:
+      - key: MONGO_URI
+        value: MONGO_URI=mongodb+srv://kellishbond:kellishbond@clinicaldata.q9g6r.mongodb.net/clinicalDataManagement?retryWrites=true&w=majority&appName=CLINICALDATA
+  - type: static
+    name: frontend
+    buildCommand: npm run build
+    publishDirectory: build # Change this if your build output directory is different
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://backend.onrender.com/api # Update this to your backend URL
