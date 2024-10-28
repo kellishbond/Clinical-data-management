@@ -287,7 +287,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-    origin: 'https://clinical-data-management-backend.onrender.com', // Update to production frontend URL in deployment
+    origin: 'https://clinical-data-management-frontend.onrender.com', // Update to production frontend URL in deployment
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 };
