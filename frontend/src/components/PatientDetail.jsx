@@ -124,7 +124,7 @@ const PatientDetail = () => {
         e.preventDefault();
         const updatedPatient = { name, age, gender, medicalHistory, prescriptions, treatments };
         try {
-            await axios.put(`https://clinical-data-management-backend.onrender.com/${id}`, updatedPatient);
+            await axios.put(`https://clinical-data-management-backend.onrender.com/api/patients/${id}`, updatedPatient);
             setPatient(updatedPatient); // Update local patient data after successful save
             setIsEditing(false);
             alert('Patient updated successfully!');
