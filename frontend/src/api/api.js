@@ -1,7 +1,7 @@
 // src/api/api.js
 import axios from 'axios';
 
-const API_URL = 'https://clinical-data-management-backend.onrender.com/api/'; // Adjust based on your backend URL
+const API_URL = 'https://clinical-data-management-backend.onrender.com/api/patients'; // Adjust based on your backend URL
 
 export const fetchPatients = async () => {
   try {
