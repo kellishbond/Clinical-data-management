@@ -12,7 +12,7 @@
 //         const fetchPatient = async () => {
 //             try {
 //                 // Make sure this URL matches your backend route for fetching a specific patient's details
-//                 const response = await axios.get(`http://localhost:5000/api/patients/${id}`);
+//                 const response = await axios.get(`https://clinical-data-management-backend.onrender.com/${id}`);
 //                 setPatient(response.data);
 //                 setLoading(false);
 //             } catch (err) {
