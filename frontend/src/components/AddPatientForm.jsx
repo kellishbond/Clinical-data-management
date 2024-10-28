@@ -12,7 +12,7 @@
 //         e.preventDefault();
 //         const newPatient = { name, age, gender, medicalHistory };
 //         try {
-//             await axios.post('https://clinical-data-management-backend.onrender.com', newPatient);
+//             await axios.post('https://clinical-data-management-backend.onrender.com/api/patients', newPatient);
 //             // Reset form fields after successful submission
 //             setName('');
 //             setAge('');
