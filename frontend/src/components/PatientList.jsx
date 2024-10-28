@@ -217,7 +217,7 @@ const PatientList = () => {
     useEffect(() => {
         const fetchPatients = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/patients');
+                const response = await axios.get('https://clinical-data-management-backend.onrender.com/api/patients');
                 setPatients(response.data);
                 setLoading(false);
             } catch (err) {
@@ -230,7 +230,7 @@ const PatientList = () => {
 
     const deletePatient = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/patients/${id}`);
+            await axios.delete(`https://clinical-data-management-backend.onrender.com/api/patients/${id}`);
             setPatients(patients.filter((patient) => patient._id !== id));
             showNotification('Patient deleted successfully!', 'success');
         } catch (err) {
