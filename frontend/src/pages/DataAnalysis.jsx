@@ -87,7 +87,7 @@ const DataAnalysis = () => {
   useEffect(() => {
     const fetchPatientData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/patients');
+        const response = await axios.get('https://clinical-data-management-backend.onrender.com');
         setPatientData(response.data);
       } catch (error) {
         setError("Failed to fetch patient data.");
