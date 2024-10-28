@@ -10,7 +10,7 @@
 // //     useEffect(() => {
 // //         const fetchPatients = async () => {
 // //             try {
-// //                 const response = await axios.get('http://localhost:5000/api/patients');
+// //                 const response = await axios.get('https://clinical-data-management-backend.onrender.com');
 // //                 setPatients(response.data);
 // //                 setLoading(false);
 // //             } catch (err) {
